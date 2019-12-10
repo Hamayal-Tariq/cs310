@@ -114,6 +114,12 @@ cut = 'spam-spam-spam'
 delimiter = '-'
 cut.split(delimiter)
 
+k = ['pining', 'for', 'the', 'fjords']
+delimiter = ' '
+delimiter.join(k)
+
+def delete_head(letters):
+    del letters[0]
 letters = ['a', 'b', 'c']
 delete_head(letters)
 print(letters)
@@ -123,6 +129,8 @@ t2 = t1.append(3)
 print(t1)
 print(t2)
 
+def tail(t):
+    return t[1:]
 letters = ['a', 'b', 'c']
 rest = tail(letters)
 print(rest)
